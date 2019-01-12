@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/crawler?useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.study.crawler.bean
+#logging:
+#  config:
+#  level:
+#    cn.lancedai.sources.image: debug
+
+#  file: D:\upload\logs\springBootLog.out
+#  file: /root/resources/sources/upload/logs/springBootLog.out
